@@ -1,0 +1,185 @@
+/**
+ * <!-- from https://www.joshwcomeau.com/css/custom-css-reset/ -->
+ *
+ * @format
+ */
+
+/* page reset */
+/*
+
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin and padding
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles and ensures consistency by making text elements inherit properties from the body. */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+strong,
+em,
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* SETS UNIVERSAL CSS VARIABLES */
+:root {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  --mainBG: hsl(47, 88%, 63%);
+  --active: hsl(47, 88%, 63%);
+  --cardBG: hsl(0, 0%, 100%);
+  --Gray500: hsl(0, 0%, 42%);
+  --Gray950: hsl(0, 0%, 7%);
+}
+
+/* ELEMENT FORMATTING */
+
+body {
+  background-color: var(--mainBG);
+}
+
+h1 {
+  width: 5rem;
+  padding: 0.1rem;
+  border-radius: 0.2rem;
+  font-weight: 800;
+  text-align: center;
+  background-color: var(--mainBG);
+}
+
+/* ID FORMATTING */
+
+/* CLASS FORMATTING */
+
+.card {
+  width: 20rem;
+  margin: 8rem auto;
+  padding: 0.1rem;
+  border: 1px solid var(--Gray950);
+  border-radius: 0.9rem;
+  background-color: var(--cardBG);
+  box-shadow: 10px 10px 0px var(--Gray950);
+}
+
+.hero {
+  display: flex;
+  width: 17.6rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+}
+
+.info {
+  /* border: 1px solid red; */
+  margin: 1rem;
+}
+
+.pub {
+  font-size: 0.8rem;
+  line-height: 3;
+}
+
+.link {
+  color: var(--Gray950);
+  font-weight: 800;
+  font-size: 1.2rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.def {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+.creator {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0.8rem;
+}
+
+.avatar {
+  width: 2rem;
+}
+
+.name {
+  margin: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
